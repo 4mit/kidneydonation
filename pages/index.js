@@ -72,7 +72,6 @@ export default function Home() {
             </div>
 
             <Text
-              blockquote
               css={{
                 textAlign: "center",
                 fontSize: "1.3rem",

@@ -65,6 +65,7 @@ export const Payment = () => (
                 <Table.Cell>UPI ID</Table.Cell>
                 <Table.Cell>
                   <a
+                    style={{textDecoration: 'underline'}}
                     href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
                     target="_blank"
                   >

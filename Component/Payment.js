@@ -37,24 +37,30 @@ export const Payment = () => (
             <Table.Body>
               <Table.Row key="1">
                 <Table.Cell>Account Holder Name</Table.Cell>
-                <Table.Cell>Leelawati Yadav</Table.Cell>
+                <Table.Cell><b>Leelawati Yadav</b></Table.Cell>
               </Table.Row>
               <Table.Row key="2">
                 <Table.Cell>Account Number</Table.Cell>
-                <Table.Cell>53110100006549</Table.Cell>
+                <Table.Cell>
+                  <strong style={{fontWeight: 'bolder'}}>53110100006549</strong>
+                </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
                 <Table.Cell>IFSC</Table.Cell>
-                <Table.Cell>BARBOROHSEC</Table.Cell>
+                <Table.Cell>
+                  <b>BARBOROHSEC</b>
+                </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
                 <Table.Cell>Mobile No</Table.Cell>
-                <Table.Cell>9990486780</Table.Cell>
+                <Table.Cell><b>9990486780</b></Table.Cell>
               </Table.Row>
               <Table.Row key="1">
                 <Table.Cell>UPI ID</Table.Cell>
                 <Table.Cell>
-                  <a href="yadav.leelawati@axl" target="_blank">yadav.leelawati@axl</a>
+                  <a href="yadav.leelawati@axl" target="_blank">
+                    yadav.leelawati@axl
+                  </a>
                 </Table.Cell>
               </Table.Row>
             </Table.Body>

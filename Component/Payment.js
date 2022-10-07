@@ -37,12 +37,16 @@ export const Payment = () => (
             <Table.Body>
               <Table.Row key="1">
                 <Table.Cell>Account Holder Name</Table.Cell>
-                <Table.Cell><b>Leelawati Yadav</b></Table.Cell>
+                <Table.Cell>
+                  <b>Leelawati Yadav</b>
+                </Table.Cell>
               </Table.Row>
               <Table.Row key="2">
                 <Table.Cell>Account Number</Table.Cell>
                 <Table.Cell>
-                  <strong style={{fontWeight: 'bolder'}}>53110100006549</strong>
+                  <strong style={{ fontWeight: "bolder" }}>
+                    53110100006549
+                  </strong>
                 </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
@@ -53,13 +57,18 @@ export const Payment = () => (
               </Table.Row>
               <Table.Row key="1">
                 <Table.Cell>Mobile No</Table.Cell>
-                <Table.Cell><b>9990486780</b></Table.Cell>
+                <Table.Cell>
+                  <b>9990486780</b>
+                </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
                 <Table.Cell>UPI ID</Table.Cell>
                 <Table.Cell>
-                  <a href="yadav.leelawati@axl" target="_blank">
-                    yadav.leelawati@axl
+                  <a
+                    href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
+                    target="_blank"
+                  >
+                    <b>yadav.leelawati@axl</b>
                   </a>
                 </Table.Cell>
               </Table.Row>

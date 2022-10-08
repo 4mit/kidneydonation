@@ -20,6 +20,7 @@ import {
 import { FacebookShareButton, FacebookIcon } from "next-share";
 import { TwitterShareButton, TwitterIcon } from "next-share";
 import { LinkedinShareButton, LinkedinIcon } from "next-share";
+import CarouselHero from '../Component/CarouselHero';
 
 import styles from '../styles/Home.module.css'
 
@@ -77,7 +78,7 @@ export default function Home() {
           </TwitterShareButton>
           <LinkedinShareButton url={"https://kidneydonation-psi.vercel.app/"}>
             <LinkedinIcon size={32} round />
-          </LinkedinShareButton>          
+          </LinkedinShareButton>
         </div>
         <Layout css={{ p: 0 }}>
           <Navbar isCompact isBordered>
@@ -109,7 +110,7 @@ export default function Home() {
               Help My Mother Live Longer With Kidney Transplant.
             </Text>
 
-            <div
+            {/* <div
               style={{
                 minHeight: "30vh",
                 borderRadius: 0,
@@ -123,8 +124,9 @@ export default function Home() {
                 src="https://kidneydonation.vercel.app/assets/images/A.jpeg"
                 alt="Default Image"
               />
-            </div>
-
+            </div> */}
+            <CarouselHero/>
+            
             <Text
               css={{
                 textAlign: "center",
@@ -135,6 +137,7 @@ export default function Home() {
               "It's not the amount that matters but the meaning behind your
               donation"
             </Text>
+
             <div style={{ padding: 20 }}>
               <Collapse.Group splitted>
                 <Collapse
@@ -228,6 +231,7 @@ export default function Home() {
                 </Collapse>
               </Collapse.Group>
             </div>
+
           </Card>
         </Layout>
         <Layout>

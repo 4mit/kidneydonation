@@ -13,18 +13,72 @@ import { Layout } from "../Component/Layout";
 import { Image } from "@nextui-org/react";
 import SimpleSlider from '../Component/Carousel'
 import { Payment}  from '../Component/Payment'
+import {
+  WhatsappShareButton,
+  WhatsappIcon,
+} from 'next-share'
+import { FacebookShareButton, FacebookIcon } from "next-share";
+import { TwitterShareButton, TwitterIcon } from "next-share";
+import { LinkedinShareButton, LinkedinIcon } from "next-share";
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Please Help</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <meta name="description" content="help live longer" />
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        ></meta>
+        <meta property="og:locale" content="en_US"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:title" content="donate now and save live"></meta>
+        <meta property="og:description" content="urgent help required"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            zIndex: 2,
+            right: "16px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <WhatsappShareButton
+            url={"https://kidneydonation-psi.vercel.app/"}
+            title={"Please help share to save life"}
+            separator=":: "
+          >
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+          <FacebookShareButton
+            url={"https://kidneydonation-psi.vercel.app/"}
+            quote={"Please help share to save life"}
+            hashtag={"#nextshare"}
+          >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <TwitterShareButton
+            url={"https://kidneydonation-psi.vercel.app/"}
+            title={"Please help share to save life"}
+          >
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <LinkedinShareButton url={"https://kidneydonation-psi.vercel.app/"}>
+            <LinkedinIcon size={32} round />
+          </LinkedinShareButton>          
+        </div>
         <Layout css={{ p: 0 }}>
           <Navbar isCompact isBordered>
             <Navbar.Brand>
@@ -47,7 +101,7 @@ export default function Home() {
               css={{
                 p: 10,
                 fontSize: "3rem",
-                textAlign: "left",
+                textAlign: "center",
                 fontWeight: 800,
               }}
               weight="bolder"

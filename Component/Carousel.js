@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import { Image,Button } from "@nextui-org/react";
+import { Image, Button, Text, Link } from "@nextui-org/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
-
+import { Card } from "@nextui-org/react";
 
 const imgs = [
   "https://kidneydonation.vercel.app/assets/documents/SKMBT_C22022080513030_0001.jpg",
@@ -60,11 +60,11 @@ function SamplePrevArrow(props) {
 }
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: false,
   speed: 500,
   autoplay: true,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
   responsive: [
@@ -108,34 +108,69 @@ const MultiItemCarousel = () => {
   return (
     <div style={{ position: "relative" }}>
       <Button
+        size="sm"
+        shadow
         onClick={previousFn}
         color="primary"
         auto
         style={{
           position: "absolute",
           left: 0,
+          zIndex: 20,
           top: "50%",
+          height: 40,
           transform: "translate(0%, -50%)",
         }}
       >
-        <b>{"<<"}</b>
+        <b>{"<"}</b>
       </Button>
       <Slider {...settings} ref={sliderRef}>
         {imgs.map((img, i) => {
           return (
-            <div key={i} style={{ padding: 15, margin:5 }}>
-              <Image
-                width="100%"
-                height="100%"
-                src={img}
-                alt="Default Image"
-                objectFit="contain"
-              />
+            <div key={i} style={{ padding: 15, margin: 15 }}>
+              <div
+                style={{
+                  padding: 15,
+                  border: "1px solid #e4e4e4",
+                  margin: 3,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <Image
+                  width="100%"
+                  height="100%"
+                  src={img}
+                  alt="Default Image"
+                  objectFit="contain"
+                />
+                <br />
+                <Button size="sm" bordered color="primary" auto>
+                  <Link href={img} target="_blank">
+                    <img
+                      height="20"
+                      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48Zz48cG9seWdvbiBwb2ludHM9IjI4OCwxNDQgMjg4LDE2MCA0MDAsMTYwIDQwMCw0MzIgMTEyLDQzMiAxMTIsMTYwIDIyNCwxNjAgMjI0LDE0NCA5NiwxNDQgOTYsNDQ4IDQxNiw0NDggNDE2LDE0NCAgICIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE5My4xLDI1Mi4zIDE4MS41LDI2My45IDI1NiwzMzguNCAzMzAuNSwyNjMuOSAzMTguOSwyNTIuMyAyNjQuMiwzMDcgMjY0LjIsNjQgMjQ3LjgsNjQgMjQ3LjgsMzA3ICAgIi8+PC9nPjwvZz48L3N2Zz4="
+                    ></img>
+                    report -{i + 1}
+                  </Link>
+                </Button>
+
+                {/* <Text
+                    h6
+                    css={{
+                      textAlign: "center",
+                    }}
+                  >
+                    Document - {i + 1}
+                  </Text> */}
+              </div>
             </div>
           );
         })}
       </Slider>
       <Button
+        size="sm"
+        shadow
         color="primary"
         auto
         onClick={nextFn}
@@ -143,10 +178,11 @@ const MultiItemCarousel = () => {
           position: "absolute",
           right: 0,
           top: "50%",
+          height: 40,
           transform: "translate(0%, -50%)",
         }}
       >
-        {">>"}
+        {">"}
       </Button>
     </div>
   );

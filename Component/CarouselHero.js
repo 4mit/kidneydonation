@@ -25,9 +25,6 @@ const imgs = [
   "/imgs/pateient-14.jpeg",
   "/imgs/pateient-15.jpeg",
   "/imgs/pateient-16.jpeg",
-  "/imgs/pateient-17.jpeg",
-  "/imgs/pateient-18.jpeg",
-  "/imgs/pateient-19.jpeg",
 ];
 
 function SampleNextArrow(props) {

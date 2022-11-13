@@ -86,7 +86,7 @@ export default function Home() {
             </Navbar.Brand>
             <Navbar.Content css={{ p: 0 }}>
               <Navbar.Item>
-                <Button auto flat as={Link} href="#pay">
+                <Button as={Link} href="#pay" color="success">
                   Donate Now
                 </Button>
               </Navbar.Item>
@@ -164,7 +164,10 @@ export default function Home() {
                     class="fade tab-pane active show"
                   >
                     <p>Hello Dear,</p>
-                    <div className="flex" style={{ padding: 3 }}>
+                    <div
+                      className="flex"
+                      style={{ padding: 3, textAlign: "justify" }}
+                    >
                       My name is Sunita Yadav and I am writing this post with a
                       heavy heart. Today, I am trying to raise funds for my
                       beloved mother, Leelawati Yadav. She is diagnosed with{" "}

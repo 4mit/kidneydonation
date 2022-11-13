@@ -173,9 +173,8 @@ export default function Home() {
                       <b>
                         <Link href="https://sgrh.com/" target="_blank">
                           {" "}
-                          Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, Old
-                          Rajinder Nagar, New Rajinder Nagar, New Delhi, Delhi
-                          110060.{" "}
+                          Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, , New
+                          Rajinder Nagar, New Delhi, Delhi 110060.{" "}
                         </Link>
                       </b>
                       Her treatment includes very expensive medications, which

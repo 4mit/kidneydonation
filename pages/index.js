@@ -171,7 +171,7 @@ export default function Home() {
                       My name is Sunita Yadav and I am writing this post with a
                       heavy heart. Today, I am trying to raise funds for my
                       beloved mother, Leelawati Yadav. She is diagnosed with{" "}
-                      <span>End Stage Kidney Disease</span> in March, 2022 and
+                      <span>End Stage Kidney Disease</span> in Feb, 2022 and
                       undergoing treatment at{"  "}
                       <Link
                         href="https://sgrh.com/"
@@ -259,7 +259,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         {" "}
-        <b>G Sector 16, Rohini, Delhi 110089</b>
+        <b> Sector 16, Rohini, Delhi 110089</b>
       </footer>
     </div>
   );

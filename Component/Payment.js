@@ -64,7 +64,7 @@ export const Payment = () => (
                 </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
-                <Table.Cell>Click on UPI link </Table.Cell>
+                <Table.Cell>UPI link {">>"}</Table.Cell>
                 <Table.Cell>
                   <Button
                     as={Link}
@@ -75,18 +75,6 @@ export const Payment = () => (
                   >
                     Donate Now
                   </Button>
-
-                  {/* <Button color="success">
-                    <a
-                      style={{ textDecoration: "no-underline" }}
-                      href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Text color="primary">Donate</Text>                     
-                    </a>
-                  </Button>
-                  */}
                 </Table.Cell>
               </Table.Row>
             </Table.Body>

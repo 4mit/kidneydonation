@@ -168,9 +168,12 @@ export default function Home() {
                       <b>End Stage Kidney Disease</b> in March, 2022 and
                       undergoing treatment at
                       <b>
-                        Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, Old
-                        Rajinder Nagar, New Rajinder Nagar, New Delhi, Delhi
-                        110060.{" "}
+                        <Link href="https://sgrh.com/" target="_blank">
+                          {" "}
+                          Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, Old
+                          Rajinder Nagar, New Rajinder Nagar, New Delhi, Delhi
+                          110060.{" "}
+                        </Link>
                       </b>
                       Her treatment includes very expensive medications, which
                       we are unable to pay for at this point in time.

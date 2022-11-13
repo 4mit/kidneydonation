@@ -7,7 +7,6 @@ import { Card } from "@nextui-org/react";
 
 const imgs = [
   "/imgs/pateient-17.jpeg",
-  "/imgs/pateient-18.jpeg",
   "/imgs/pateient-19.jpeg",
   "/imgs/pateient-1.jpeg",
   "/imgs/pateient-2.jpeg",

@@ -259,7 +259,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         {" "}
-        <b> Sector 16, Rohini, Delhi 110089</b>
+        <b> G Block Sector 16, Rohini, Delhi 110089</b>
       </footer>
     </div>
   );

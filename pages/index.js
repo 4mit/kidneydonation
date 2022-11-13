@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 import {
   Navbar,
   Button,
@@ -8,21 +8,18 @@ import {
   Collapse,
   Radio,
   useTheme,
+  Image,
 } from "@nextui-org/react";
 import { Layout } from "../Component/Layout";
-import { Image } from "@nextui-org/react";
-import SimpleSlider from '../Component/Carousel'
-import { Payment}  from '../Component/Payment'
-import {
-  WhatsappShareButton,
-  WhatsappIcon,
-} from 'next-share'
+import SimpleSlider from "../Component/Carousel";
+import { Payment } from "../Component/Payment";
+import { WhatsappShareButton, WhatsappIcon } from "next-share";
 import { FacebookShareButton, FacebookIcon } from "next-share";
 import { TwitterShareButton, TwitterIcon } from "next-share";
 import { LinkedinShareButton, LinkedinIcon } from "next-share";
-import CarouselHero from '../Component/CarouselHero';
-
-import styles from '../styles/Home.module.css'
+import CarouselHero from "../Component/CarouselHero";
+import { DoctorProfile } from "../Component/DoctorProfile";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -125,8 +122,8 @@ export default function Home() {
                 alt="Default Image"
               />
             </div> */}
-            <CarouselHero/>
-            
+            <CarouselHero />
+
             <Text
               css={{
                 textAlign: "center",
@@ -169,10 +166,19 @@ export default function Home() {
                       heavy heart. Today, I am trying to raise funds for my
                       beloved mother, Leelawati Yadav. She is diagnosed with{" "}
                       <b>End Stage Kidney Disease</b> in March, 2022 and
-                      undergoing treatment at <b>Sir Ganga Ram Hospital</b>,
-                      Delhi. Her treatment includes very expensive medications,
-                      which we are unable to pay for at this point in time.
+                      undergoing treatment at
+                      <b>
+                        Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, Old
+                        Rajinder Nagar, New Rajinder Nagar, New Delhi, Delhi
+                        110060.{" "}
+                      </b>
+                      Her treatment includes very expensive medications, which
+                      we are unable to pay for at this point in time.
                     </p>
+                    <div>
+                      <DoctorProfile />
+                    </div>
+
                     <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg">
                       My mother sugar level and blood pressure is consistently
                       high for the past few months. She is also having joint and
@@ -231,7 +237,6 @@ export default function Home() {
                 </Collapse>
               </Collapse.Group>
             </div>
-
           </Card>
         </Layout>
         <Layout>

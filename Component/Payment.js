@@ -64,13 +64,12 @@ export const Payment = () => (
                 </Table.Cell>
               </Table.Row>
               <Table.Row key="1">
-                <Table.Cell>UPI ID (click on UPI link )</Table.Cell>
+                <Table.Cell>Click on UPI link </Table.Cell>
                 <Table.Cell>
                   <Button
-                    auto
-                    flat
                     as={Link}
                     target="_blank"
+                    color="success"
                     rel="noreferrer"
                     href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
                   >
@@ -94,14 +93,38 @@ export const Payment = () => (
           </Table>
         </div>
       </Grid>
-      <Grid xs={12} sm={6} md={6} lg={6}>
-        <Image
-          width="300px"
-          height="300px"
-          src="https://kidneydonation.vercel.app/assets/images/qr.jpeg"
-          alt="Default Image"
-          objectFit="contain"
-        />
+      <Grid xs={12} sm={12} md={12} lg={12} direction="column" justify="center">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link
+            href={"https://kidneydonation.vercel.app/assets/images/qr.jpeg"}
+            target="_blank"
+          >
+            <Image
+              width="300px"
+              height="300px"
+              src="https://kidneydonation.vercel.app/assets/images/qr.jpeg"
+              alt="Default Image"
+              objectFit="contain"
+            />
+          </Link>
+          <br />
+          <Button
+            as={Link}
+            target="_blank"
+            color="success"
+            rel="noreferrer"
+            href={"https://kidneydonation.vercel.app/assets/images/qr.jpeg"}
+          >
+            Download QR Code
+          </Button>
+        </div>
       </Grid>
     </Grid.Container>
   </Card>

@@ -1,7 +1,8 @@
 import { Grid } from "@nextui-org/react";
 import { Card, Text } from "@nextui-org/react";
-import { Table } from "@nextui-org/react";
+import { Table, Link } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 export const Payment = () => (
   <Card>
     <hr sixe="2" />
@@ -13,7 +14,7 @@ export const Payment = () => (
         fontSize: "1.52rem",
         padding: "0px 10px",
         margin: "0px 20px",
-        textAlign:'center'
+        textAlign: "center",
       }}
       weight="bold"
     >
@@ -65,14 +66,28 @@ export const Payment = () => (
               <Table.Row key="1">
                 <Table.Cell>UPI ID (click on UPI link )</Table.Cell>
                 <Table.Cell>
-                  <a
-                    style={{ textDecoration: "underline" }}
-                    href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
+                  <Button
+                    auto
+                    flat
+                    as={Link}
                     target="_blank"
+                    rel="noreferrer"
+                    href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
                   >
-                    <Text color="primary">yadav.leelawati@axl</Text>
-                    {/* <b>yadav.leelawati@axl</b> */}
-                  </a>
+                    Donate Now
+                  </Button>
+
+                  {/* <Button color="success">
+                    <a
+                      style={{ textDecoration: "no-underline" }}
+                      href="upi://pay?pa=yadav.leelawati@axl&amp;pn=Leelawati devi&amp;cu=INR"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Text color="primary">Donate</Text>                     
+                    </a>
+                  </Button>
+                  */}
                 </Table.Cell>
               </Table.Row>
             </Table.Body>

@@ -34,8 +34,7 @@ const imgs = [
   "https://kidneydonation.vercel.app/assets/documents/SKMBT_C22022080513030_0026.jpg",
   "https://kidneydonation.vercel.app/assets/documents/SKMBT_C22022080513030_0027.jpg",
   "https://kidneydonation.vercel.app/assets/documents/SKMBT_C22022080513030_0028.jpg",
-]
-
+];
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -61,7 +60,7 @@ function SamplePrevArrow(props) {
 
 const settings = {
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 500,
   autoplay: true,
   slidesToShow: 4,
@@ -74,7 +73,7 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {

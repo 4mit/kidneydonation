@@ -6,6 +6,9 @@ import { useRef } from "react";
 import { Card } from "@nextui-org/react";
 
 const imgs = [
+  "/imgs/pateient-17.jpeg",
+  "/imgs/pateient-18.jpeg",
+  "/imgs/pateient-19.jpeg",
   "/imgs/pateient-1.jpeg",
   "/imgs/pateient-2.jpeg",
   "/imgs/pateient-3.jpeg",
@@ -18,8 +21,14 @@ const imgs = [
   "/imgs/pateient-10.jpeg",
   "/imgs/pateient-11.jpeg",
   "/imgs/pateient-12.jpeg",
+  "/imgs/pateient-13.jpeg",
+  "/imgs/pateient-14.jpeg",
+  "/imgs/pateient-15.jpeg",
+  "/imgs/pateient-16.jpeg",
+  "/imgs/pateient-17.jpeg",
+  "/imgs/pateient-18.jpeg",
+  "/imgs/pateient-19.jpeg",
 ];
-
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -45,7 +54,7 @@ function SamplePrevArrow(props) {
 
 const settings = {
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 500,
   autoplay: true,
   slidesToShow: 4,
@@ -58,7 +67,7 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -125,11 +134,11 @@ const CarouselHero = () => {
                   src={img}
                   alt="Default Image"
                   style={{
-                    width:'100%',
-                    height:450,
+                    width: "100%",
+                    height: 450,
                   }}
-                  objectFit='cover'
-                />             
+                  objectFit="cover"
+                />
               </div>
             </div>
           );

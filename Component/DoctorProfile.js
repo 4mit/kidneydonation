@@ -7,7 +7,8 @@ export const DoctorProfile = () => {
         <Card css={{ mw: "100%", borderRadius: 0 }}>
           <Card.Body>
             <h4>
-              Treatment is Observed under : Prof. A.K. Bhalla (09811047377)
+              Treatment is Observed under : Dr. (Prof ) . A.K. Bhalla Contact :
+              09811047377
             </h4>
             <Image
               src="/doctor.jpeg"

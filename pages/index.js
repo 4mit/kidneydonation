@@ -164,22 +164,25 @@ export default function Home() {
                     class="fade tab-pane active show"
                   >
                     <p>Hello Dear,</p>
-                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg">
+                    <div className="flex" style={{ padding: 3 }}>
                       My name is Sunita Yadav and I am writing this post with a
                       heavy heart. Today, I am trying to raise funds for my
                       beloved mother, Leelawati Yadav. She is diagnosed with{" "}
-                      <b>End Stage Kidney Disease</b> in March, 2022 and
-                      undergoing treatment at
-                      <b>
-                        <Link href="https://sgrh.com/" target="_blank">
-                          {" "}
-                          Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, , New
-                          Rajinder Nagar, New Delhi, Delhi 110060.{" "}
-                        </Link>
-                      </b>
-                      Her treatment includes very expensive medications, which
-                      we are unable to pay for at this point in time.
-                    </p>
+                      <span>End Stage Kidney Disease</span> in March, 2022 and
+                      undergoing treatment at{"  "}
+                      <Link
+                        href="https://sgrh.com/"
+                        target="_blank"
+                        style={{ display: "inline" }}
+                      >
+                        Sir Ganga Ram Hospital, Rajinder Nagar, New Delhi -
+                        110060, INDIA
+                      </Link>
+                      <span>
+                        {"  "}Her treatment includes very expensive medications,
+                        which we are unable to pay for at this point in time.
+                      </span>
+                    </div>
                     <div>
                       <DoctorProfile />
                     </div>

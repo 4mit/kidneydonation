@@ -171,8 +171,8 @@ export default function Home() {
                       My name is Sunita Yadav and I am writing this post with a
                       heavy heart. Today, I am trying to raise funds for my
                       beloved mother, Leelawati Yadav. She is diagnosed with{" "}
-                      <span>End Stage Kidney Disease</span> in Feb, 2022 and
-                      undergoing treatment at{"  "}
+                      <span>End Stage Kidney Disease</span> in February, 2022
+                      and undergoing treatment at{"  "}
                       <Link
                         href="https://sgrh.com/"
                         target="_blank"

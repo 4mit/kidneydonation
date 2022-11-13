@@ -153,7 +153,10 @@ export default function Home() {
                   />
                 </Collapse>
 
-                <Collapse bordered title="Health Condition Details ">
+                <Collapse
+                  bordered
+                  title="Health Condition Details And Doctor Details"
+                >
                   <div
                     role="tabpanel"
                     id="uncontrolled-tab-example-tabpane-home"

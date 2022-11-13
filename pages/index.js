@@ -85,8 +85,8 @@ export default function Home() {
               </Text>
             </Navbar.Brand>
             <Navbar.Content css={{ p: 0 }}>
-              <Navbar.Item>
-                <Button as={Link} href="#pay" color="success">
+              <Navbar.Item style={{ marginLeft: 4 }}>
+                <Button auto as={Link} href="#pay" color="success" size={"sm"}>
                   Donate Now
                 </Button>
               </Navbar.Item>
